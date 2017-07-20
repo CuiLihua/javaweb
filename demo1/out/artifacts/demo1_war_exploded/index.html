@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+	<head>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+
+		<meta charset="utf-8">
+
+		<title>Simple Canvas Game</title>
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<style type="text/css">
+			/*body {*/
+				 /*text-align:center;*/
+			/*}*/
+			/*div.he {*/
+				/*margin:0 auto;*/
+				/*width:300px;*/
+				/*height:500px;*/
+				/*!*border:1px*!*/
+			/*}*/
+
+			html,body{
+				min-height:100%;
+			}
+
+			body {
+				margin: 0;
+				overflow: hidden;
+			}
+			div.he {
+				width: 100%;
+			}
+
+
+			div.wai {
+				position: absolute;
+				left: 15%;
+				top:32%;
+				width: 70%;
+			}
+			div.zt1_3 {
+				float:left;
+				width: 33%;
+			}
+			div.result{
+				position: absolute;
+				width: 300px;
+				top: 30px;
+			}
+			#she,#it {
+				display: none;
+			}
+			div.zhongjiang {
+				position: fixed;
+				background: white;
+				left:0;
+				top:0;
+			}
+
+
+			div.printP {
+				position: fixed;
+				left: 14%;
+				top:36%;
+				width: 200px;
+			}
+			img.a1 {
+				float: left;
+				text-align: center;
+			}
+			img.a2 {
+				float: right;
+				text-align: center;
+			}
+			#shurushouji, #queren {
+				margin: 0 0 0 14%;
+			}
+		</style>
+
+
+		
+	</head>
+	<body>
+
+	<div class="he">
+		<!--<canvas id="canvas" ></canvas>-->
+
+		<script src ="js/game.js"></script>
+
+			<!--<div id="getsth" display="none">-->
+			<!--<object  type="application/x-shockwave-flash" data="images/1s.swf" width="200" height="200">-->
+  				<!--<param name="movie" value="images/1s.swf" />-->
+  				<!--<param name="quality" value="high"/>-->
+			<!--</object>-->
+			<!--</div>-->
+		<div id="zhantai1*3" class="wai" display="block">
+			<div  class="zt1_3">
+				<div id="zt1">
+				</div>
+
+			</div>
+			<div class="zt1_3">
+				<div id="zt2">
+
+				</div>
+			</div>
+			<div class="zt1_3">
+				<div id="zt3">
+
+				</div>
+			</div>
+		</div>
+	<!--</div>-->
+		<div class="zhongjiang" id="she" style="width: auto;height: 100%">
+			<div>
+				<img src="images/zhongjiangle.png"  width="100%"/>
+				<p id="shurushouji">请输入手机号码</p><input id="queren" type="text"/>
+			</div>
+
+				<img class="a1" src="images/anniu.jpg" onclick="queren()" width="150px">
+				<img class="a2" src="images/anniu.jpg" onclick="reload()" width="150px">
+			<div id="printP" class="printP"></div>
+		</div>
+		<div class="zhongjiang" id="it" style="width: auto;height: 100%">
+			<div>
+				<img src="images/prize-none.png"  width="100%"/>
+			<img class="a2" src="images/anniu.jpg" onclick="reload()" width="150px">
+		</div>
+	</div>
+
+	</body>
+</html>

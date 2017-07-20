@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="demo1:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/demo1_war</output-path>
+    <root id="archive" name="demo1_war.war">
+      <element id="artifact" artifact-name="demo1:war exploded" />
+      <element id="javaee-facet-resources" facet="demo1/web/Web" />
+    </root>
+  </artifact>
+</component>

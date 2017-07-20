@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <servlet>
+        <servlet-name>test</servlet-name>
+        <servlet-class>org.clh.test.Hello</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>submitGift</servlet-name>
+        <servlet-class>org.clh.test.SubmitGift</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>rewardInfo</servlet-name>
+        <servlet-class>org.clh.test.RewardInfo</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>loginInfo</servlet-name>
+        <servlet-class>org.clh.test.Login</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>register</servlet-name>
+        <servlet-class>org.clh.test.Register</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>luckyDraw</servlet-name>
+        <servlet-class>org.clh.test.Utils.LuckyDraw</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>luckyDraw</servlet-name>
+        <url-pattern>/lucky</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>test</servlet-name>
+        <url-pattern>/test</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>submitGift</servlet-name>
+        <url-pattern>/submitGift</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>register</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>rewardInfo</servlet-name>
+        <url-pattern>/rewardInfo</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>loginInfo</servlet-name>
+        <url-pattern>/loginInfo</url-pattern>
+    </servlet-mapping>
+
+</web-app>
+
+
+

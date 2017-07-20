@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>新商家注册</title>
+    <meta charset="utf-8">
+    <meta name="content-type" content="text/html; charset=UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <link href="css/login.css" type="text/css" rel="stylesheet">
+    <link href="css/global.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+    <style>
+        p.bgzwz,input {
+            margin: 0 0 0 40px;
+        }
+        p.bgzwz {
+            color: white;
+        }
+        .xiabian {
+            margin: 0 0 500px 50px;
+        }
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="login" class="login" style="display: block ">
+    <div class="login-title"><p id="hehe">新商家注册</p>
+        <i></i>
+    </div>
+    <form method="post" action="/register">
+        <p class="bgzwz">用户名:</p>
+        <input type="text" name="username" class="text" placeholder="如：张三" required/>
+        <br>
+        <p class="bgzwz">手机号:</p>
+        <input type="text" name="phone" class="text" placeholder="如：666" required/>
+        <br>
+        <p class="bgzwz">密码:</p>
+        <input type="password" name="passwd" class="psd" placeholder="" required/>
+        <br>
+        <p class="bgzwz">确认密码:</p>
+        <input type="password" name="psagain" class="psd" placeholder="" required/>
+        <br>
+        <p class="bgzwz">地址信息:</p>
+        <input type="text" name="address" class="text" placeholder="如：西土城10号" required/>
+        <br>
+        <br>
+        <input  class="xiabian" type="submit" value="提交"/>
+
+    </form>
+
+</div>
+
+
+
+
+</body>
+</html>
